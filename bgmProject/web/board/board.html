@@ -2,26 +2,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>BGM-게시판</title>
+<title>BGM-고객센터</title>
 <script type="text/javascript" src="../common/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 	$(function() {
-		$('div#header').load('../common/view/header.html');
-		$('div#footer').load('../common/view/footer.html');
+		$('header#header').load('../common/view/header.html');
+		$('footer#footer').load('../common/view/footer.html');
+	
+		$("#header").css("background-color", "red");
+		$("body").css("background-color", "blue");
+		$("#footer").css("background-color", "green");
+	
 	});
+	
 </script>
-
 </head>
+<header id="header"></header>
 <body>
-	<div id="header"></div>
-	<p>
-	<div>구역1</div>
-	<div>구역2</div>
-	
-	
-	
-	
-	
-	<div id="footer"></div>
+<p>
+	<div class="bTitle">
+		<div class="bTitle" id="btName">
+			<h2>고객센터</h2>
+		</div>
+	</div>
+	<div id="bContent">구역2</div>
 </body>
+<footer id="footer"></footer>
 </html>
