@@ -5,15 +5,17 @@
 <title>bgm 메인페이지(index)</title>
 <script type="text/javascript" src="common/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
-	$("header#header").load("common/view/header.html");
-	$("footer#footer").load("common/view/footer.html");
+	$(function() {
+		$('div#header').load('common/view/header.html');
+		$('div#footer').load('common/view/footer.html');
+	});
 </script>
 </head>
 <body>
-<header id="header">11</header>
+<div id="header">111</div>
 <section></section>
 
-<footer id="footer"></footer>
+<div id="footer"></div>
 
 </body>
 </html>
