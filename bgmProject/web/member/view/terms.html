@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이용약관</title>
+<script type="text/javascript" src="../../common/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$('footer').load("../../common/view/footer.html");
+	})
+</script>
+<style type="text/css">
+	div#terms {
+		width : 600px;
+		height: 900px;
+	}
+</style>
+</head>
+<body>
+<div id="terms">
+	<form action="">
+		<table id="termstable">
+			<tr><td>개인정보수집 및 활용</td><td><input type="checkbox"> </td></tr>
+			<tr><td colspan="2"><textarea rows="5" cols="50" readonly="readonly">111</textarea>  </td></tr>
+			<tr><td>BGS.COM 이용약관</td><td><input type="checkbox"></td></tr>
+			<tr><td colspan="2"><textarea rows="5" cols="50" readonly="readonly">222</textarea> </td> </tr>
+			<tr><td>전체 동의 </td><td><input type="checkbox"></td></tr>
+			<tr><td></td><td></td></tr>
+		</table>
+		<br>
+		<table id="termsbuttontable">
+			<tr><td><button value="비동의"></button> </td><td><button value="동의"></button></td></tr>
+		</table>
+	</form>
+</div>
+</body>
+<footer></footer>
+</html>
