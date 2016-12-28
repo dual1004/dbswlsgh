@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>new member</title>
+<script type="text/javascript" src="../../common/js/jquery-3.1.1.min.js"></script>
 <style type="text/css">
 	section {
 		width : 400px;
@@ -19,6 +20,9 @@
 	function owerlap() {
 		//디비 연결 아이디 중복체크
 	}
+	$(function () {
+		$('footer').load("../../common/view/footer.html");
+	});
 </script>
 </head>
 <body>
@@ -29,6 +33,20 @@
 <section>
 
 	<form action="">
+		<table>
+			<tr><td>아이디 : </td><td><input type="text" placeholder="15자미만 공백없이" autofocus="autofocus" required="required"></td><td><button onclick="owerlap">중복체크</button></td></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+		</table>
+		
+	
+	
 		<label> 아이디 : <input type="text" placeholder="15자미만 공백없이" autofocus="autofocus" required="required"> </label> <button onclick="owerlap">중복체크</button> <br>
 		<label> 비밀번호 : <input type="password" required="required" > </label><br>
 		<label> 비밀번호확인 : <input type="password" required="required"> </label><br>
@@ -49,7 +67,7 @@
 </div>
 
 <footer> 
-//푸터
+
 
 </footer>
 </body>
